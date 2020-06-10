@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/architecture_comp_view_contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/architecture_comp_view_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/texto_normal"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pepito Grillo" />
+
+    <TextView
+        android:id="@+id/architecture_comp_view_compania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/architecture_comp_view_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/architecture_comp_view_nombre"
+        app:layout_constraintTop_toTopOf="@+id/architecture_comp_view_nombre"
+        tools:text="Mi compañia" />
+
+    <TextView
+        android:id="@+id/architecture_comp_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="43dp"
+        tools:text="esteesmiemail@email.com" />
+
+    <TextView
+        android:id="@+id/architecture_comp_compi_view_telf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/architecture_comp_view_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/architecture_comp_view_email"
+        app:layout_constraintTop_toTopOf="@+id/architecture_comp_view_email"
+        tools:text="(+34) 999 99 99 99" />
+
+</LinearLayout>
